@@ -1,4 +1,4 @@
-# erldrasil -  Yggdrasil Unix Client Library in Erlang
+**Yggdrasil Unix Client Library in Erlang
 
 **Version: 0.1.0**
 
