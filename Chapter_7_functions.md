@@ -139,6 +139,90 @@ int main() {
 so int a = print_1_to_n(10); will give an error.
 Humme sirf call krdena hain.
 
+## DISCUSSION ABOUT YEH POORI CHEEZ CHALTI KAISE HAIN
+
+lets take one more code where we need to print all prime no's upto given n.
+
+```C++
+#include <iostream>
+using namespace std;
+
+bool isPrime(int n) {
+        int d = 2;
+        while (d < n) {
+                if (n % d == 0) {
+                        return false;
+                }
+                d++;
+        }
+        return true;
+}
+
+int main() {
+        int n;
+        cin >> n;
+        for (int x = 2; x <= n; x++) {
+                if (isPrime(x)) {
+                        cout << x << endl;
+                }
+        }
+}
+```
+
+Remember main humara start block hota hain.Waha se hi sabh start and end hota hain.
+
+# VERY IMPORTANT : CALL STACK
+
+
+```C++
+#include <iostream>
+using namespace std;
+
+void B() {
+        cout << 5 << endl;
+}
+
+void A(int a) {
+        cout << 1 << endl;
+        B();
+        cout << 2 << endl;
+}
+
+int main() {
+        int n = 10;
+        cout << 3 << endl;
+        A(n);
+        cout << n << endl;
+        cout << 4 << endl;
+}
+```
+## Ab when we trace this we rlz stack -> (  main ->(A) -> (B) )
+## main sabse pehle andar gaya sabse last mein bahar aaayega and B sabse last toh sabse pehle khatam hoga.
+
+------------------------------------------------------------
+
+## SCOPE OF VARIABLES wrt FUNCTIONS
+
+function ka bracket jaise khatam hota hain variable ka scope bhi khatam hota hain.
+
+## IMPORTANT CONCEPT : PASS BY VALUE
+
+```C++
+#include <iostream>
+using namespace std;
+
+void increment(int a) {
+	a = a + 1;
+}
+
+int main() {
+	int a = 10;
+	increment(a);
+	cout << a << endl;
+}
+```
+
+cout mein 10 hi print hoga.Bcoz pehle main stack mein gaya phir uske upar increment function aaya uske liye alag partition bana memory ka ab increment ka jo bhi tha udhar hi hua.usme main ke stack mein koi changes nahin hue therefore a==10 hi rahega.
 
 
 

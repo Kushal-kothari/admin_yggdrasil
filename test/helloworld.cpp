@@ -1,55 +1,22 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-
-// int factorial(int n){
-//         int ans = 1;
-//         int i =1;
-//         while(i<=n){
-//                 ans=ans*i;
-//                 i++;
-//         }
-//         return ans;
-// }
-
-
-// int main(){
-
-//         int n,r;
-//         cin >> n >> r;
-//         int fact_n = factorial(n);
-//         int fact_r = factorial(r);
-//         int fact_n_r = factorial(n-r);
-//         int ans = fact_n/(fact_r*fact_n_r);
-//         cout << ans << endl;        
-// }
-
+#include "student.cpp"
 
 int main(){
-        int scount = 0,dcount = 0,acount = 0;
-        char daebe;
-        daebe = cin.get();
-        cout << daebe <<"check" << endl;
-        while(daebe != '$'){
+    Fraction f1(10,2);
+    Fraction f2(10,2);
+    Fraction f3 = f1 + f2;
 
-        
-                if('1'<= daebe<='9'){
-                        cout<< daebe;
-                        dcount ++;
-                }
-                if('a'<= daebe <= 'z'){
-                        // cout << daebe;
-                        acount ++;
-                
-                }        
+    f1.print();
+    f2.print();
+    f3.print();
+    Fraction f4 = f1 * f2;
+    f4.print();
 
-                if(daebe == ' '){
-                        scount ++;
-                }
-                daebe = cin.get();
-        }
-        cout << acount << endl;
-        cout << dcount<< endl;
-        cout << scount;
+    if(f1 == f2){
+        cout << "Equal" << endl;
+    }
+    else{
+        cout << "Not equal" << endl;
+    }
 }
-
-
