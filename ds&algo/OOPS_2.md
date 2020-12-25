@@ -99,7 +99,7 @@ humne pass kiya tha : Student(int age, char *name)
 Toh iss name ki jagah actually pass hua hain addresss 780 and constructor function ne usko recieve kiya aise
 -> age parameter banaya usme 20 daala and name parameter banaya and usme usne 780 ko pass kr diya
 
-Toh s1 ke block mein jo uske pass 2 properties hain name and roll no usme 20 and address 780 daal diya.Toh s1 ka name actually same arrY KO HI POINT KR RAHA HAIN
+Toh s1 ke block mein jo uske pass 2 properties hain name and roll no usme 20 and address 780 daal diya.Toh s1 ka name actually same array KO HI POINT KR RAHA HAIN
 
 Ab apan ne code mein d ki jagah 3 likh diya toh woh change hua
 
@@ -288,7 +288,7 @@ Student(Student s) iska matlab Student s mein Main.s1 ki value daaldo. i.e Stude
 More simple explaination:
 
 int fun(int b){  // yahan par pass by value or lets say value copy hui i.e. 5
-    cout << b;>>
+    cout << b;
 }
 
 int a = 5;
@@ -391,7 +391,7 @@ b = a; //4
 ```
 
 In example 1 ,first piece of code is correct.constant ko pehle likho yaa baadme likho koi farak nahin padta.
-In example 2 ,line 3 bhi correct hain but usme garbage value place ho jaayegi and phir hum line 4 mein usse change krr rahe hain, so though error line 4 pe hain but copilation error line 3 pe aayega.
+In example 2 ,line 3 bhi correct hain but usme garbage value place ho jaayegi and phir hum line 4 mein usse change krr rahe hain, so though error line 4 pe hain but compilation error line 3 pe aayega.
 
 --------------------------------------------------
 Example 2:
@@ -1158,7 +1158,7 @@ kushal@kushal:~/Desktop/C++/test$ ./hello
 5
 ```
 
-So humm humare class ke datamembers and functions kisi ko bhi  static declare kr skte hain.Static declare krne ka simple sa meaning hain "I want inn properties ki value object pe depend naa kare , basically har object ke liye same ho.Har object ke liye unke liye common jagah padi hui hain.Jab bhi humein inhe access krna hain,we need to use class ka naam scoper resolution and name of your property chahe woh function ho yaa variable hoo"
+So humm humare class ke datamembers and functions kisi ko bhi static declare kr skte hain.Static declare krne ka simple sa meaning hain "I want inn properties ki value object pe depend naa kare , basically har object ke liye same ho.Har object ke liye unke liye common jagah padi hui hain.Jab bhi humein inhe access krna hain,we need to use class ka naam scoper resolution and name of your property chahe woh function ho yaa variable hoo"
 
 see example variable bhi static print kiya hain Dekhle.
 

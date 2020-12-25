@@ -1210,7 +1210,7 @@ Kyuki humme class ka function call krne ke liye we need object_name.function_nam
 f1.add(f2) -> ab humne f1.add call kiya hain,toh add function ke "this" keyword mein toh f1 ka address toh chala hi jaayega with the use of this keyword.So hum f1 ki properties ko access kr skte hain.To humme f1 pass krne ki zaroorat nahin hain
 Humme sirf f2 pass krna hain
 Now return type kya rakhe?
-We want jab hum f1.add(f1f2) krre tabh toh f1 and f2 add krne ke baad jo result ho woh f1 mein hi update ho jaye, f2 unchanged rahe.Toh naya kuch create hi nahin krna,toh return hi nahi krna, in that case humara return type void hona chaiye
+We want jab hum f1.add(f2) krre tabh toh f1 and f2 add krne ke baad jo result ho woh f1 mein hi update ho jaye, f2 unchanged rahe.Toh naya kuch create hi nahin krna,toh return hi nahi krna, in that case humara return type void hona chaiye
 
 Ab calculations:
 
@@ -1258,7 +1258,7 @@ class Fraction{
         numerator = num;
         denominator = lcm;
 
-        simplify();
+        simpli fy();
         //simplify krega 70/4 ko 35/2 krega
         /*also issline pe apan ne direct function call kiya ,object dot nahin likha,to same iska matlab hain this ke upar simplify call krdo.taha par this f1 tha toh f1 pe call chala jaayega.*/
     }
