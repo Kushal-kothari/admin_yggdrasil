@@ -2,17 +2,38 @@
 using namespace std;
 #include "student.cpp"
 
+Node takeInput(){
+    int data;
+    cin >> data;
+    while(data != -1){
+        Node n(data);
+    }
+}
+
+
+void print(Node *head){
+    Node *temp = head;
+    while(temp != NULL){
+        cout << temp -> data << " ";
+        temp = temp -> next;
+    }
+    cout << endl;
+}
+
 int main(){
-    //Statically
 
     Node n1(1);
-
     Node *head = &n1;
 
     Node n2(2);
+    Node n3(3);
+    Node n4(4);
+    Node n5(5);
 
     n1.next = &n2;
-    cout << head -> data << " " << n1.data << endl;   
-    cout << head -> next << " " << n1.next << endl;
+    n2.next = &n3;
+    n3.next = &n4;
+    n4.next = &n5;
 
+    print(head);
 }
